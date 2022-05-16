@@ -9,7 +9,7 @@
   --tertiary-text-color: #7a0bc0;
   --quadinary-text-color: #fa58b6;
 
-  --primary-padding: 200px;
+  --primary-padding: 140px;
   --secondary-padding: 8px;
 }
 
@@ -31,7 +31,6 @@ h1 {
 body {
   width: 100%;
   background-color: var(--primary-color);
-
   color: var(--primary-text-color);
 }
 
@@ -80,13 +79,15 @@ nav > .nav-container > .nav-link {
 }
 
 nav > .nav-container > .nav-link:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-text-color);
+  color: var(--primary-color);
 }
 
 nav > .nav-container > .nav-link:focus {
   width: 80px;
   transform: scale(0.9);
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-text-color);
+  color: var(--primary-color);
 }
 
 main {
@@ -99,6 +100,28 @@ section#home {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+}
+
+.loader {
+  border: 8px solid var(--secondary-color); /* Light grey */
+  border-top: 8px solid var(--primary-text-color); /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide-loader {
+  display: none;
 }
 
 .introduction-container {
@@ -137,7 +160,7 @@ section#skills .skills-container .frontend,
 
 section#skills .skills-container .frontend,
 .backend {
-  border-bottom: 1px solid var(--primary-text-color);
+  border-bottom: 0.5px solid var(--primary-text-color);
 }
 
 section#skills .domain-skills-container {
@@ -151,7 +174,8 @@ section#skills .domain-skills-container {
 }
 
 section#skills .skill-card img {
-  filter: drop-shadow(0 0 0.07rem var(--primary-text-color));
+  /* filter: drop-shadow(0 0 0.07rem var(--secondary-text-color)); */
+  filter: drop-shadow(0 0 0.05rem #fff);
 }
 
 section#projects .projects-container {

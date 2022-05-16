@@ -22,8 +22,16 @@
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
       },
       {
+        "name": "redux",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"
+      },
+      {
         "name": "jQuery",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/1280px-JQuery-Logo.svg.png"
+      },
+      {
+        "name": "materialUI",
+        "img": "https://mui.com/static/logo.png"
       }
     ],
     "backend": [

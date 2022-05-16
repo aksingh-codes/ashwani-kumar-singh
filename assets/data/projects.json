@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "name": "Drum 🥁 Kit",
+      "img": "/assets/images/projects/drum-kit.png",
+      "description": "Drumkit allows you to revive your inner musician.",
+      "repoLink": "https://github.com/aksingh-codes/Drum-kit",
+      "liveLink": "https://aksingh-codes.github.io/Drum-kit/"
+    },
+    {
+      "name": "Tindog 🐕 - Website",
+      "img": "/assets/images/projects/tindog.png",
+      "description": "Tindog is a website where you can find ",
+      "repoLink": "https://github.com/aksingh-codes/TinDog-project",
+      "liveLink": "https://aksingh-codes.github.io/TinDog-project/"
+    },
+    {
+      "name": "Tindog 🐕 - Website",
+      "img": "/assets/images/projects/tindog.png",
+      "description": "Tindog is a website where you can find ",
+      "repoLink": "https://github.com/aksingh-codes/TinDog-project",
+      "liveLink": "https://aksingh-codes.github.io/TinDog-project/"
+    }
+  ]
+}
