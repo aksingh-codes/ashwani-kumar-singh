@@ -40,7 +40,7 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   live.href = liveLink;
   live.target = "_blank";
   live.rel = "noopener noreferrer";
-  live.classList.add("card-link", "shadow", "live-link");
+  live.classList.add("card-link", "live-link");
   const linkIcon = document.createElement("i");
   linkIcon.classList.add("fa-solid", "fa-link");
   live.appendChild(linkIcon);
@@ -50,7 +50,7 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   repo.href = repoLink;
   repo.target = "_blank";
   repo.rel = "noopener noreferrer";
-  repo.classList.add("card-link", "shadow", "repository-link");
+  repo.classList.add("card-link", "repository-link");
   const githubIcon = document.createElement("i");
   githubIcon.classList.add("fa-brands", "fa-github");
   repo.appendChild(githubIcon);

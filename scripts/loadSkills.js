@@ -2,6 +2,7 @@ const loadSkills = () => {
   const skillselement = document.querySelector(
     "section#skills .skills-container"
   );
+
   const frontendElement = skillselement.querySelector(
     ".frontend .domain-skills-container"
   );
@@ -14,29 +15,55 @@ const loadSkills = () => {
 
   fetch("./assets/data/skills.json").then(async (response) => {
     const data = await response.json();
-    const skills = data.skills;
-    const frontendSkills = skills.frontend;
-    const backendSkills = skills.backend;
-    const toolsSkills = skills.tools;
+    // const skills = data.skills;
+    const allSkills = data.skills;
+    console.log(allSkills);
 
-    frontendElement.querySelector(".loader").remove();
-    backendElement.querySelector(".loader").remove();
-    toolsElement.querySelector(".loader").remove();
+    allSkills.forEach((skillObj) => {
+      const type = skillObj.type;
+      const skills = skillObj.skills;
 
-    frontendSkills.forEach((skill) => {
-      const skillCard = createSkillCard(skill);
-      frontendElement.appendChild(skillCard);
+      const skillTypeElement = document.createElement("div");
+      skillTypeElement.classList.add(type);
+      const header = document.createElement("h2");
+      header.innerText = type;
+
+      const domainSkillsContainer = document.createElement("div");
+      domainSkillsContainer.classList.add("domain-skills-container");
+
+      skills.forEach((skill) => {
+        const skillCard = createSkillCard(skill);
+        domainSkillsContainer.appendChild(skillCard);
+      });
+
+      skillTypeElement.appendChild(header);
+      skillTypeElement.appendChild(domainSkillsContainer);
+
+      skillselement.appendChild(skillTypeElement);
     });
 
-    backendSkills.forEach((skill) => {
-      const skillCard = createSkillCard(skill);
-      backendElement.appendChild(skillCard);
-    });
+    // const frontendSkills = skills.frontend;
+    // const backendSkills = skills.backend;
+    // const toolsSkills = skills.tools;
 
-    toolsSkills.forEach((skill) => {
-      const skillCard = createSkillCard(skill);
-      toolsElement.appendChild(skillCard);
-    });
+    // frontendElement.querySelector(".loader").remove();
+    // backendElement.querySelector(".loader").remove();
+    // toolsElement.querySelector(".loader").remove();
+
+    // frontendSkills.forEach((skill) => {
+    //   const skillCard = createSkillCard(skill);
+    //   frontendElement.appendChild(skillCard);
+    // });
+
+    // backendSkills.forEach((skill) => {
+    //   const skillCard = createSkillCard(skill);
+    //   backendElement.appendChild(skillCard);
+    // });
+
+    // toolsSkills.forEach((skill) => {
+    //   const skillCard = createSkillCard(skill);
+    //   toolsElement.appendChild(skillCard);
+    // });
   });
 };
 
@@ -44,7 +71,7 @@ const createSkillCard = ({ name, faclass, img }) => {
   const skillCard = document.createElement("div");
   const logo = document.createElement("img");
   logo.src = img;
-  logo.height = "90";
+  logo.height = "60";
 
   const nameElement = document.createElement("p");
   nameElement.innerText = name;
