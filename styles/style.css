@@ -99,13 +99,19 @@ nav {
 nav > .nav-container {
   display: flex;
   flex-direction: row;
+  gap: 12px;
 }
 
 /* Button */
 nav > .nav-container > .nav-link {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+
   text-decoration: none;
   /* background-color: var(--secondary-background-color); */
-  width: 90px;
+  /* width: 90px; */
   padding: 3px 0;
   text-align: center;
   margin-right: 8px;
@@ -125,6 +131,13 @@ nav > .nav-container > .nav-link:focus {
   /* background-color: var(--secondary-text-color);
   color: var(--primary-background-color); */
   /* box-shadow: 0px 0px 1px var(--primary-background-color); */
+}
+
+nav .theme-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
 }
 
 nav .theme-selector:hover {
@@ -403,3 +416,7 @@ footer.container i {
   background-image: radial-gradient(currentColor 0.4px, transparent 0.4px);
   background-size: calc(40 * 0.4px) calc(40 * 0.4px);
 } */
+
+.hidden {
+  display: none;
+}
