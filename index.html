@@ -167,8 +167,26 @@
     <!-- Contact Section -->
     <section id="contact" class="container pattern-dots-sm">
       <h1><i class="fa-regular fa-message"></i> Contact</h1>
-      <form action="" method="post">
-        <p>Get in touch <i class="fas fa-headphones"></i></p>
+      <form>
+        <ul class="form-style">
+          <p style="text-align: center; font-size: large;">Get in touch</p>
+          <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1"
+              class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided"
+              placeholder="Last" /></li>
+          <li>
+            <label>Email <span class="required">*</span></label>
+            <input type="email" name="field3" class="field-long" />
+          </li>
+          <li>
+            <label>Your Message <span class="required">*</span></label>
+            <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+          </li>
+          <li>
+            <button class="btn">Send</button>
+          </li>
+        </ul>
+      </form>
+      <!-- <form class="form-control" action="" method="post">
         <label for="name"></label>
         <input type="text" name="" id="name" placeholder="Name">
         <label for="email"></label>
@@ -176,7 +194,7 @@
         <label for="message"></label>
         <textarea name="" id="message" cols="30" rows="10" placeholder="Any message if you want"></textarea>
         <button type="submit">Message me</button>
-      </form>
+      </form> -->
     </section>
   </main>
 
@@ -192,6 +210,7 @@
       <i class="fab fa-twitter"></i>
       <i class="fab fa-linkedin"></i>
       <i class="fab fa-discord"></i>
+      <i class="far fa-envelope"></i>
     </div>
   </footer>
 
