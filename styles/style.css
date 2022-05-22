@@ -33,6 +33,10 @@ h1 {
   font-size: 3rem;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   width: 100%;
   background-color: var(--secondary-background-color);
