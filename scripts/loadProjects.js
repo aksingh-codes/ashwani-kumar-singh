@@ -21,6 +21,7 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   const screenshot = document.createElement("img");
   screenshot.src = img;
   screenshot.alt = `${name}`;
+  screenshot.loading = "lazy";
 
   const projectCardBody = document.createElement("div");
   projectCardBody.classList.add("project-card-body");

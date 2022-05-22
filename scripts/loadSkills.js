@@ -72,6 +72,7 @@ const createSkillCard = ({ name, faclass, img }) => {
   const logo = document.createElement("img");
   logo.src = img;
   logo.height = "60";
+  logo.loading = "lazy";
 
   const nameElement = document.createElement("p");
   nameElement.innerText = name;
