@@ -24,7 +24,7 @@ function switchToLight() {
   body.classList.remove("dark-theme");
   themeSelector.querySelector(".fa-sun").classList.remove("hidden");
   themeSelector.querySelector(".fa-moon").classList.add("hidden");
-  themeSelector.querySelector("p").innerText = "Light Mode";
+  // themeSelector.querySelector("p").innerText = "Light Mode";
 }
 
 function switchToDark() {
@@ -32,7 +32,7 @@ function switchToDark() {
   body.classList.add("dark-theme");
   themeSelector.querySelector(".fa-sun").classList.add("hidden");
   themeSelector.querySelector(".fa-moon").classList.remove("hidden");
-  themeSelector.querySelector("p").innerText = "Dark Mode";
+  // themeSelector.querySelector("p").innerText = "Dark Mode";
 }
 
 function saveTheme() {

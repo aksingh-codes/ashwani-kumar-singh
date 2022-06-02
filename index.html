@@ -41,33 +41,46 @@
 <body>
   <!-- NavBar -->
   <nav>
-    <div class="nav-container">
-      <a class="nav-link" href="#">
-        <i class="fas fa-home"></i> Home
-      </a>
-      <a class="nav-link" href="#skills">
-        <i class="fas fa-tools"></i> Skills
-      </a>
-      <a class="nav-link" href="#projects">
-        <i class="fas fa-laptop-code"></i> Projects
-      </a>
-      <a class="nav-link" href="#about">
-        <i class="fas fa-info-circle"></i> About
-      </a>
-      <a class="nav-link" href="#contact">
-        <i class="fa-regular fa-message"></i> Contact
-      </a>
-      <a style="color: var(--quadinary-text-color);" target="_blank" rel="noopener noreferrer" class="nav-link"
-        href="./assets/Ashwani_Kumar_Singh_resume.pdf">
-        <i class="far fa-file"></i> Resume
-      </a>
-      </ul>
-    </div>
-    <div class="nav-container">
-      <div class="theme-selector">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon hidden"></i>
-        <p>Light</p>
+    <div class="navbar">
+
+      <div style="display: none;" class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-container">
+        <a class="nav-item nav-link" href="#">
+          <!-- <i clss="fas fa-home"></i>  -->
+          Home
+        </a>
+        <a class="nav-item nav-link" href="#skills">
+          <!-- <i class="fas fa-tools"></i>  -->
+          Skills
+        </a>
+        <a class="nav-item nav-link" href="#projects">
+          <!-- <i class="fas fa-laptop-code"></i> -->
+          Projects
+        </a>
+        <a class="nav-item nav-link" href="#about">
+          <!-- <i class="fas fa-info-circle"></i>  -->
+          About
+        </a>
+        <a class="nav-item nav-link" href="#contact">
+          <!-- <i class="fas fa-message"></i> -->
+          Contact
+        </a>
+        <a style="color: var(--quadinary-text-color);" target="_blank" rel="noopener noreferrer" class="nav-link"
+          href="./assets/Ashwani_Kumar_Singh_resume.pdf">
+          <i class="fas fa-download"></i> Resume
+        </a>
+        </ul>
+      </div>
+
+      <div class="nav-container">
+        <div class="nav-item theme-selector">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon hidden"></i>
+          <p></p>
+        </div>
       </div>
     </div>
   </nav>
@@ -75,20 +88,32 @@
   <main>
 
     <!-- Home Section -->
-    <section id="home" class="container pattern-dots-sm">
-      <div class="introduction-container">
-        <h5>Hello, I'm Ashwani</h5>
-        <p>Full Stack Developer</p>
+    <section id="home" class="pattern-dots-sm">
+      <div class="container">
+        <div class="introduction-container">
+          <h2 class="display-1">
+            Hi👋, I'm
+            Ashwani
+          </h2>
+          <h2 class="display-2">Full Stack Developer</h2>
+        </div>
+        <!-- <button class="btn"><i class="fas fa-download"></i> Resume</button> -->
+        <img class="intro-image-container big-shadow" src="/assets/images/ashwani.jpeg" alt="">
       </div>
-      <img class="intro-image-container big-shadow" src="/assets/images/ashwani.jpeg" alt="">
+
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="container">
-      <h1><i class="fas fa-tools"></i> Skills</h1>
-      <div class="skills-container">
+    <section id="skills">
+      <div class="container">
 
-        <!-- <div class="frontend">
+        <h1>
+          <!-- <i class="fas fa-tools"></i>  -->
+          Skills
+        </h1>
+        <div class="skills-container">
+
+          <!-- <div class="frontend">
           <h2>Frontend</h2>
           <div class="domain-skills-container">
             <div class="loader"></div>
@@ -101,7 +126,7 @@
             <div class="loader"></div>
           </div>
         </div>
-
+        
         <div class="tools">
           <h2>Tools</h2>
           <div class="domain-skills-container">
@@ -109,64 +134,79 @@
           </div>
         </div> -->
 
+        </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="container pattern-dots-sm">
-      <h1><i class="fas fa-laptop-code"></i> Projects</h1>
-      <div class="projects-container">
+    <section id="projects" class="pattern-dots-sm">
+      <div class="container">
 
-        <!-- <div class="project-card big-shadow">
-          <img src="assets/images/tindog.png" alt="Tindog">
-          <div class="project-card-body">
-            <h3 class="card-title">A Project</h3>
-            <p class="card-description">This is very cool project.</p>
-            <div class="card-links">
-              <a href="#" class="card-link shadow live-link"><i class="fa-solid fa-link"></i> Live</a>
-              <a href="#" class="card-link shadow repository-link"><i class="fa-brands fa-github"></i> Code</a>
+        <h1>
+          <!-- <i class="fas fa-laptop-code"></i>  -->
+          Projects
+        </h1>
+        <div class="projects-container">
+
+          <!-- <div class="project-card big-shadow">
+            <img src="assets/images/tindog.png" alt="Tindog">
+            <div class="project-card-body">
+              <h3 class="card-title">A Project</h3>
+              <p class="card-description">This is very cool project.</p>
+              <div class="card-links">
+                <a href="#" class="card-link shadow live-link"><i class="fa-solid fa-link"></i> Live</a>
+                <a href="#" class="card-link shadow repository-link"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
             </div>
-          </div>
-        </div> -->
+          </div> -->
 
+        </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container">
-      <h1> <i class="fas fa-info-circle"></i> About</h1>
-      <p>
-        Hi 👋, I am Ashwani Kumar Singh. I find joy in building software using <strong>web technologies</strong>. I did
-        an internship as
-        a frontend engineer intern at <a href="zapone.io">Zapone Solutions</a>. I've completed Btech
-        from Dayalbagh Educational Institute with a computer
-        science
-        specialization.
-      </p>
-      <p> I am proficient with <strong>javascript</strong>. I have experience with <strong>MERN (MongoDB, Express,
-          React,
-          Node.js) Stack</strong>. I've
-        done projects with
-        client-side rendering (using React, Vanilla JS) and server-side rendering (using Express).
-      </p>
-      <p>
-        I also have experience with <strong>C</strong> which i used while i was learning <strong>Data Structures and
-          Algorithms</strong>.
-      </p>
-      <br>
-      <p>Hobbies and Interests</p>
-      <ul style="list-style: none;">
-        <li>Linux <i class="fab fa-linux"></i></li>
-        <li>PC Games</li>
-        <li>Anime</li>
-      </ul>
-      <br>
-      <!-- <a href="./about.html"><i class="fas fa-link"></i> More about me</a> -->
+    <section id="about">
+      <div class="container">
+
+        <h1>
+          <!-- <i class="fas fa-info-circle"></i>  -->
+          About
+        </h1>
+        <p>
+          Hi 👋, I am Ashwani Kumar Singh. I find joy in building software using <strong>web technologies</strong>. I
+          did
+          an internship as
+          a frontend engineer intern at <a href="zapone.io">Zapone Solutions</a>. I've completed Btech
+          from Dayalbagh Educational Institute with a computer science specialization.
+        </p>
+        <p> I am proficient with <strong>javascript</strong>. I have experience with <strong>MERN (MongoDB, Express,
+            React,
+            Node.js) Stack</strong>. I've
+          done projects with
+          client-side rendering (using React, Vanilla JS) and server-side rendering (using Express).
+        </p>
+        <p>
+          I also have experience with <strong>C</strong> which i used while i was learning <strong>Data Structures and
+            Algorithms</strong>.
+        </p>
+        <br>
+        <p>Hobbies and Interests</p>
+        <ul style="list-style: none;">
+          <li>Linux <i class="fab fa-linux"></i></li>
+          <li>PC Games</li>
+          <li>Anime</li>
+        </ul>
+        <br>
+        <!-- <a href="./about.html"><i class="fas fa-link"></i> More about me</a> -->
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container pattern-dots-sm">
-      <h1><i class="fa-regular fa-message"></i> Contact</h1>
+      <h1>
+        <!-- <i class="fa-regular fa-message"></i>  -->
+        Contact
+      </h1>
       <form>
         <ul class="form-style">
           <p style="text-align: center; font-size: large;">Get in touch</p>

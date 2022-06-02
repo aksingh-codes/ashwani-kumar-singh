@@ -41,7 +41,7 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   live.href = liveLink;
   live.target = "_blank";
   live.rel = "noopener noreferrer";
-  live.classList.add("card-link", "live-link");
+  live.classList.add("btn", "card-link", "live-link");
   const linkIcon = document.createElement("i");
   linkIcon.classList.add("fa-solid", "fa-link");
   live.appendChild(linkIcon);
@@ -51,7 +51,7 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   repo.href = repoLink;
   repo.target = "_blank";
   repo.rel = "noopener noreferrer";
-  repo.classList.add("card-link", "repository-link");
+  repo.classList.add("btn", "card-link", "repository-link");
   const githubIcon = document.createElement("i");
   githubIcon.classList.add("fa-brands", "fa-github");
   repo.appendChild(githubIcon);
@@ -73,17 +73,3 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
 loadProjects();
 
 // target="_blank" rel="noopener noreferrer"
-
-{
-  /* <div class="project-card big-shadow">
-          <img src="assets/images/tindog.png" alt="Tindog">
-          <div class="project-card-body">
-            <h3 class="card-title">A Project</h5>
-              <p class="card-description">This is very cool project.</p>
-              <div class="card-links">
-                <a href="#" class="card-link shadow live-link"><i class="fa-solid fa-link"></i> Live</a>
-                <a href="#" class="card-link shadow repository-link"><i class="fa-brands fa-github"></i> Code</a>
-              </div>
-          </div>
-        </div> */
-}
