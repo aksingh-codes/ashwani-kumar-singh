@@ -57,8 +57,8 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   repo.appendChild(githubIcon);
   repo.append(" Code");
 
-  cardLinks.appendChild(live);
-  cardLinks.appendChild(repo);
+  liveLink && cardLinks.appendChild(live);
+  repoLink && cardLinks.appendChild(repo);
 
   projectCardBody.appendChild(titleElement);
   projectCardBody.appendChild(descriptionElement);

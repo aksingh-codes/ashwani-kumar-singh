@@ -310,6 +310,7 @@ footer {
       );
 
   max-width: 350px;
+  height: fit-content;
 }
 
 .project-card:hover {
