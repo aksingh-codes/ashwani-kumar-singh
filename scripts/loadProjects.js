@@ -26,6 +26,9 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   const projectCardBody = document.createElement("div");
   projectCardBody.classList.add("project-card-body");
 
+  const projectCardBodyContent = document.createElement("div");
+  projectCardBodyContent.classList.add("card-body-content");
+
   const titleElement = document.createElement("h3");
   titleElement.classList.add("card-title");
   titleElement.innerText = name;
@@ -60,8 +63,10 @@ const createProjectCard = ({ name, img, description, repoLink, liveLink }) => {
   liveLink && cardLinks.appendChild(live);
   repoLink && cardLinks.appendChild(repo);
 
-  projectCardBody.appendChild(titleElement);
-  projectCardBody.appendChild(descriptionElement);
+  projectCardBodyContent.appendChild(titleElement);
+  projectCardBodyContent.appendChild(descriptionElement);
+
+  projectCardBody.appendChild(projectCardBodyContent);
   projectCardBody.appendChild(cardLinks);
 
   projectCard.appendChild(screenshot);
