@@ -23,36 +23,24 @@
   --default-border-radius: 4px;
   --nav-height: 4rem;
 
-  --shadow-2dp: 0 2px 2px 0
-      rgba(
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-key-penumbra-opacity)
-      ),
+  --shadow-2dp: 0 2px 2px 0 rgba(var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-key-penumbra-opacity)),
     0 3px 1px -2px rgba(var(--shadow-color), var(--shadow-color), var(--shadow-color), var(--shadow-key-umbra-opacity)),
-    0 1px 5px 0
-      rgba(
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-ambient-shadow-opacity)
-      );
+    0 1px 5px 0 rgba(var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-ambient-shadow-opacity));
 
-  --shadow-8dp: 0 8px 10px 1px
-      rgba(
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-key-umbra-opacity)
-      ),
-    0 3px 14px 2px
-      rgba(
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-color),
-        var(--shadow-key-umbra-opacity)
-      ),
+  --shadow-8dp: 0 8px 10px 1px rgba(var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-key-umbra-opacity)),
+    0 3px 14px 2px rgba(var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-color),
+      var(--shadow-key-umbra-opacity)),
     0 5px 5px -3px rgba(var(--shadow-color), var(--shadow-color), var(--shadow-color), var(--shadow-ambient-shadow-opacity));
   --display-color1: black;
   --display-color2: #f34660;
@@ -104,6 +92,7 @@ h2 {
   font-size: 1.5rem;
   line-height: 1;
   color: var(--secondary-text-color);
+  font-weight: 500;
 }
 
 h3 {
@@ -113,7 +102,8 @@ h3 {
 }
 
 p,
-li,a {
+li,
+a {
   font-size: 0.9rem;
   line-height: 1.3;
   color: var(--other-text-color);
@@ -129,7 +119,7 @@ a:hover {
 }
 
 h1.display-1 {
-  
+
   line-height: 1.2;
   /* font-size: 7rem !important; */
   /* color: var(--display-color1); */
@@ -141,7 +131,7 @@ h1.display-1 {
 }
 
 #home-text {
-  font-family: 'Kaushan Script',cursive;
+  font-family: 'Kaushan Script', cursive;
 
 }
 
@@ -262,8 +252,58 @@ footer {
   margin-bottom: var(--nav-height);
 }
 
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--nav-height);
+}
+
 #skills h2 {
   text-transform: capitalize;
+}
+
+.flex-skills {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flex-skills-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-skills-box-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill-item {
+  min-width: 80px;
+  min-height: 80px;
+  /* background-color: var(--primary-background-color); */
+  border-radius: var(--default-border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  gap: 2px;
+  color: var(--quadinary-text-color);
+}
+
+.skill-item span {
+  color: var(--primary-text-color);
+}
+
+.skill-icon {
+  width: 80%;
+  height: 80%;
 }
 
 #skills .domain-skills-container {
@@ -367,6 +407,7 @@ footer.container i {
 
 .container {
   max-width: 1920px;
+  width: 100%;
   padding: var(--nav-height) var(--primary-padding);
   text-align: center;
 }
@@ -379,10 +420,8 @@ footer.container i {
 
 /* Dotted Pattern */
 .pattern-dots-sm {
-  background-image: radial-gradient(
-    var(--primary-text-color) 0.4px,
-    transparent 0.4px
-  );
+  background-image: radial-gradient(var(--primary-text-color) 0.4px,
+      transparent 0.4px);
   background-size: calc(40 * 0.4px) calc(40 * 0.4px);
 }
 
@@ -441,12 +480,14 @@ footer.container i {
   list-style: none;
   margin: 10px 0 0 0;
 }
+
 .form-style label {
   margin: 0 0 3px 0;
   padding: 0px;
   display: block;
   font-weight: bold;
 }
+
 .form-style input,
 textarea,
 select {
@@ -461,11 +502,13 @@ select {
   background-color: inherit;
   color: var(--other-text-color);
 }
+
 .form-style input:focus,
 .form-style textarea:focus,
 .form-style select:focus {
   border: 1px solid var(--tertiary-text-color);
 }
+
 .form-style .field-divided {
   width: 49%;
 }
@@ -473,9 +516,11 @@ select {
 .form-style .field-long {
   width: 100%;
 }
+
 .form-style .field-select {
   width: 100%;
 }
+
 .form-style .field-textarea {
   height: 100px;
 }
@@ -553,6 +598,7 @@ select {
     --default-border-radius: 2px;
     --nav-height: 2rem;
   }
+
   h1 {
     font-size: 2rem;
   }

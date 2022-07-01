@@ -1,7 +1,7 @@
 import * as React from "react";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
-import Skills from "../components/Skills";
+import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Contact from "../components/Contact";
