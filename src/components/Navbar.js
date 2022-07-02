@@ -1,6 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
+import { GoThreeBars } from "react-icons/go";
+
+const links = [
+  {
+    text: "SKILLS",
+    link: "skills",
+  },
+  {
+    text: "PROJECTS",
+    link: "projects",
+  },
+  {
+    text: "ABOUT",
+    link: "about",
+  },
+  {
+    text: "CONTACT",
+    link: "contact",
+  },
+];
 
 const Navbar = () => {
+  const ref = useRef(null);
+
+  const NavLink = ({ text, link }) => {
+    return (
+      <a onClick={toggleNav} className="nav-item nav-link" href={`#${link}`}>
+        {text}
+      </a>
+    );
+  };
+
+  const toggleNav = () => {
+    if (ref) {
+      ref.current.classList.toggle("show-nav-container");
+    }
+  };
+
   return (
     <nav>
       <div className="navbar">
@@ -13,19 +49,10 @@ const Navbar = () => {
           Ashwani
         </a>
 
-        <div className="nav-container">
-          <a className="nav-item nav-link" href="#skills">
-            SKILLS
-          </a>
-          <a className="nav-item nav-link" href="#projects">
-            PROJECTS
-          </a>
-          <a className="nav-item nav-link" href="#about">
-            ABOUT
-          </a>
-          <a className="nav-item nav-link" href="#contact">
-            CONTACT
-          </a>
+        <div className="nav-container" ref={ref}>
+          {links.map((link) => (
+            <NavLink {...link} />
+          ))}
           <a
             style={{ color: "var(--quadinary-text-color)" }}
             target="_blank"
@@ -37,14 +64,11 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* <div className="nav-container">
+        <div className="nav-container">
           <div className="nav-item theme-selector">
-            <BsSun />
-            <i className="fas fa-sun"></i>
-            <i className="fas fa-moon hidden"></i>
-            <p></p>
+            <GoThreeBars onClick={toggleNav} />
           </div>
-        </div> */}
+        </div>
       </div>
     </nav>
   );

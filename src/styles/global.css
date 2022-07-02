@@ -157,6 +157,7 @@ nav {
   background-color: var(--primary-background-color);
   /* box-shadow: var(--shadow-2dp); */
   z-index: 100;
+  
 }
 
 nav .navbar {
@@ -168,6 +169,7 @@ nav .navbar {
   align-items: center;
   padding-left: var(--primary-padding);
   padding-right: var(--primary-padding);
+  transition: all 0.8s ease;
 }
 
 nav .nav-container {
@@ -531,6 +533,10 @@ select {
   color: var(--quadinary-text-color);
 }
 
+.navbar .nav-container:nth-child(3) {
+  display: none;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1000px) {
@@ -540,11 +546,25 @@ select {
   }
 
   .navbar .nav-container:nth-child(2) {
+    flex-direction: column;
+    width: 0;
     display: none;
+    align-items: center;
+    background-color: var(--primary-background-color);
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    height: 100vh;
+    justify-content: center;
   }
 
-  .navbar .hamburger {
-    display: block !important;
+  .show-nav-container {
+    display: flex !important;
+    width: 100% !important;
+  }
+
+  .navbar .nav-container:nth-child(3) {
+    display: block;
   }
 
   #skills .skill-card img {

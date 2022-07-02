@@ -2,7 +2,6 @@ import React from "react";
 import { BsGithub, BsLink } from "react-icons/bs";
 
 const ProjectCard = ({ project }) => {
-  console.log(project);
   return (
     <div
       style={{
