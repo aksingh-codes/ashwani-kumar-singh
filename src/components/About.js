@@ -4,7 +4,10 @@ const About = () => {
   return (
     <section id="about">
       <div className="container">
-        <h1>About</h1>
+        <div className="header">
+          <h1>About Me</h1>
+          <p>Let me introduce myself</p>
+        </div>
         <p>
           Hi 👋, I am Ashwani Kumar Singh. I find joy in building software using{" "}
           <strong>web technologies</strong>. I did an internship as a frontend
@@ -24,7 +27,11 @@ const About = () => {
           was learning <strong>Data Structures and Algorithms</strong>.
         </p>
         <br />
-        <p>Hobbies and Interests</p>
+        <p>
+          <strong>
+            Hobbies and Interests
+          </strong>
+        </p>
         <ul style={{ listStyle: "none" }}>
           <li>
             Linux <i className="fab fa-linux"></i>

@@ -7,7 +7,10 @@ const Skills = () => {
   return (
     <section id="skills">
       <div className="container">
-        <h1>Skills</h1>
+        <div className="header">
+          <h1>My Tech Stack</h1>
+          <p>I build stuff with the following technologies.</p>
+        </div>
         <div className="skills-container">
           <div className="flex-skills">
             <div className="flex-skills-box">

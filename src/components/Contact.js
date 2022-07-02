@@ -3,10 +3,13 @@ import React from "react";
 const Contact = () => {
   return (
     <section id="contact" className="container pattern-dots-sm">
-      <h1>Contact</h1>
+      <div className="header">
+        <h1>Contact</h1>
+        <p>Get in touch</p>
+      </div>
       <form>
         <ul className="form-style">
-          <p style={{ textAlign: "center", fontSize: "large" }}>Get in touch</p>
+          {/* <p style={{ textAlign: "center", fontSize: "large" }}>Get in touch</p> */}
           <li>
             <label htmlFor="field1">
               Full Name <span className="required">*</span>

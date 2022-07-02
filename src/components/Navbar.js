@@ -1,14 +1,17 @@
 import React from "react";
-import {BsSun} from "react-icons/bs"
 
 const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
-
-        <div className="nav-container" id="home-text">
+        <a
+          style={{ textDecoration: "none" }}
+          href="#home"
+          className="nav-container"
+          id="home-text"
+        >
           Ashwani
-        </div>
+        </a>
 
         <div className="nav-container">
           <a className="nav-item nav-link" href="#skills">
@@ -42,7 +45,6 @@ const Navbar = () => {
             <p></p>
           </div>
         </div> */}
-
       </div>
     </nav>
   );
