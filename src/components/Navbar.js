@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { GoThreeBars } from "react-icons/go";
+import Resume from "../../static/Ashwani_Kumar_Singh_resume.pdf";
 
 const links = [
   {
@@ -58,7 +59,8 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link"
-            href="./assets/Ashwani_Kumar_Singh_resume.pdf"
+            // href="/assets/Ashwani_Kumar_Singh_resume.pdf"
+            href={Resume}
           >
             <i className="fas fa-download"></i> RESUME
           </a>
