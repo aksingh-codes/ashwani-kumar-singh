@@ -16,9 +16,12 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "email-validator": "^2.0.4",
     "gatsby": "^4.17.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-icons": "^4.4.0"
+    "react-hook-form": "^7.33.1",
+    "react-icons": "^4.4.0",
+    "react-toastify": "^9.0.5"
   }
 }

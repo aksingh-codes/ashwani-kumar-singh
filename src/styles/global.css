@@ -460,6 +460,10 @@ footer.container i {
   scale: 0.9;
 }
 
+.btn:disabled {
+  scale: 0.9;
+}
+
 /* FORM */
 
 .form-style {
