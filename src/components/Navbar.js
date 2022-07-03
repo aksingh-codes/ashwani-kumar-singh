@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const NavLink = ({ text, link }) => {
     return (
-      <a onClick={toggleNav} className="nav-item nav-link" href={`#${link}`}>
+      <a onClick={removeNav} className="nav-item nav-link" href={`#${link}`}>
         {text}
       </a>
     );
@@ -35,6 +35,12 @@ const Navbar = () => {
   const toggleNav = () => {
     if (ref) {
       ref.current.classList.toggle("show-nav-container");
+    }
+  };
+
+  const removeNav = () => {
+    if (ref) {
+      ref.current.classList.remove("show-nav-container");
     }
   };
 
