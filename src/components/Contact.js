@@ -25,7 +25,7 @@ const Contact = () => {
       message: data.messageBox,
     };
 
-    const response = await toast.promise(
+    await toast.promise(
       emailjs.send(
         process.env.GATSBY_API_SERVICE_ID,
         process.env.GATSBY_API_TEMPLATE_ID,

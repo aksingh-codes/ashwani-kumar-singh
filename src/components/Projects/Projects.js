@@ -1,8 +1,30 @@
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import projects from "./data";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allDataJson {
+        nodes {
+          projects {
+            description
+            liveLink
+            name
+            repoLink
+            img {
+              childImageSharp {
+                gatsbyImageData(placeholder: TRACED_SVG)
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const projects = data.allDataJson.nodes[0].projects;
+
   return (
     <section id="projects" class="pattern-dots-sm">
       <div class="container">
