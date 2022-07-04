@@ -1,7 +1,9 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import { BsGithub, BsLink } from "react-icons/bs";
 
 const ProjectCard = ({ project }) => {
+  const image = getImage(project.img);
   return (
     <div
       style={{
@@ -12,7 +14,12 @@ const ProjectCard = ({ project }) => {
         alignItems: "center",
       }}
     >
-      <img style={{ width: "100%" }} src={project.img} alt="" />
+      <GatsbyImage
+        placeholder="tracedSVG"
+        style={{ width: "100%" }}
+        image={image}
+        alt=""
+      />
       <div
         className="body"
         style={{
