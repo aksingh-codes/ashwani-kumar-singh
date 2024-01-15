@@ -9,36 +9,51 @@ const About = () => {
           <p>Let me introduce myself</p>
         </div>
         <p>
-          Hi 👋, I am Ashwani Kumar Singh. I find joy in building software using{" "}
-          <strong>web technologies</strong>. I did an internship as a frontend
-          engineer intern at <a href="zapone.io">Zapone Solutions</a>. I've
-          completed Btech from Dayalbagh Educational Institute with a computer
-          science specialization.
-        </p>
-        <p>
-          {" "}
-          I am proficient with <strong>javascript</strong>. I have experience
-          with <strong>MERN (MongoDB, Express, React, Node.js) Stack</strong>.
-          I've done projects with client-side rendering (using React, Vanilla
-          JS) and server-side rendering (using Express).
-        </p>
-        <p>
-          I also have experience with <strong>C</strong> which i used while i
-          was learning <strong>Data Structures and Algorithms</strong>.
+          Hey! 👋 Ashwani Kumar Singh here, a frontend developer passionate
+          about crafting delightful web experiences. Currently at{" "}
+          <a
+            target="_blanck"
+            referrerPolicy="no-referrer"
+            href="https://www.nonalifestyle.com/"
+          >
+            NONA Lifestyle
+          </a>
+          , I serve as a Software Engineer Frontend, specializing in projects
+          using JavaScript, TypeScript, React, Next.js, Tailwind CSS, React
+          Query, and shadcn/ui. During the{" "}
+          <a
+            target="_blanck"
+            referrerPolicy="no-referrer"
+            href="https://zapone.io/"
+          >
+            Zapone Solutions
+          </a>{" "}
+          internship, my focus was on frontend development. Hold a B.Tech in
+          Civil Engineering with Computer Science Specialization from Dayalbagh
+          Educational Institute.
         </p>
         <br />
         <p>
-          <strong>
-            Hobbies and Interests
-          </strong>
+          <strong>Tech Expertise</strong>
         </p>
         <ul style={{ listStyle: "none" }}>
           <li>
-            Linux <i className="fab fa-linux"></i>
+            Proficient in JavaScript and TypeScript, using React and Next.js for
+            dynamic user interfaces.
           </li>
-          <li>PC Games</li>
-          <li>Anime</li>
+          <li>
+            Enjoy exploring the frontend realm with technologies like Tailwind
+            CSS, React Query, and shadcn/ui.
+          </li>
         </ul>
+        <br />
+        <p>
+          <strong>Current Focus</strong>
+        </p>
+        <p>
+          Deeply involved in crafting engaging frontend solutions at NONA
+          Lifestyle.
+        </p>
         <br />
       </div>
     </section>

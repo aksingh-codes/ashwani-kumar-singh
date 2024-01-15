@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
-import { GoThreeBars } from "react-icons/go";
 import Resume from "../../static/Ashwani_Kumar_Singh_resume.pdf";
+import { FaHamburger } from "react-icons/fa";
+import { BsFillMenuAppFill, BsHammer, BsList, BsMenuButton, BsThreeDots } from "react-icons/bs";
 
 const links = [
   {
@@ -74,7 +75,7 @@ const Navbar = () => {
 
         <div className="nav-container">
           <div className="nav-item theme-selector">
-            <GoThreeBars onClick={toggleNav} />
+            <BsList onClick={toggleNav} />
           </div>
         </div>
       </div>
